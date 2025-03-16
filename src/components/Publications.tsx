@@ -11,21 +11,25 @@ const Publications = () => {
       title: "Algebraic billiards in the Fermat hyperbola.",
       status: "Preprint, 2024, submitted for publication. 34 pages.",
       year: 2024,
-      type: "preprint"
+      type: "preprint",
+      url: "https://arxiv.org/abs/2406.16172"
     },
     {
       id: 2,
       title: "The dynamical degree of billiards in an algebraic curve.",
       status: "To appear in Journal of Geometric Analysis, 49 pages.",
       year: 2023,
-      type: "journal"
+      type: "journal",
+      url: "https://rdcu.be/d0WmQ",
+      talkUrl: "https://scgp.stonybrook.edu/video_portal/video.php?id=6266"
     },
     {
       id: 3,
       title: "GIT stability of linear maps on projective space with marked points.",
       status: "To appear in Illinois J. Math., 39 pages.",
       year: 2023,
-      type: "journal"
+      type: "journal",
+      url: "https://arxiv.org/abs/2111.06351"
     },
     {
       id: 4,
@@ -33,14 +37,18 @@ const Publications = () => {
       authors: "With Talia Blum, John Doyle, Trevor Hyde, Colby Kelln, and Henry Talbott.",
       status: "Arnold Math. J., 8 (2022), no. 2, 285–317.",
       year: 2022,
-      type: "journal"
+      type: "journal",
+      url: "https://armj.math.stonybrook.edu/pdf-Springer-final/022-0197.pdf",
+      arxivUrl: "https://arxiv.org/abs/2108.10777"
     },
     {
       id: 5,
       title: "The algebraic dynamics of the pentagram map.",
       status: "Ergodic Theory & Dynamical Systems 43 (2023), no. 10, 3460–3505.",
       year: 2023,
-      type: "journal"
+      type: "journal",
+      url: "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/algebraic-dynamics-of-the-pentagram-map/8D3E1A5A55AB36D89F17B29B8F98E04B",
+      arxivUrl: "https://arxiv.org/abs/2104.06211"
     },
     {
       id: 6,
@@ -48,7 +56,9 @@ const Publications = () => {
       authors: "With Julia Cai, Benjamin Hutz, and Leo Mayer.",
       status: "Glasgow Math. J. 65 (2023), no. 1, 222–255.",
       year: 2023,
-      type: "journal"
+      type: "journal",
+      url: "https://www.cambridge.org/core/journals/glasgow-mathematical-journal/article/abs/automorphism-groups-of-endomorphisms-of-mathbbp1-barmathbbfp/3C7EE1998E884A35A3D097A946D9B668",
+      arxivUrl: "https://arxiv.org/abs/2003.12113"
     },
     {
       id: 7,
@@ -56,7 +66,9 @@ const Publications = () => {
       authors: "With Nathan Kaplan, Susie Kimport, Rachel Lawrence, and Luke Peilen.",
       status: "J. Geom. 108 (2017), no. 3, 1013–1029.",
       year: 2017,
-      type: "journal"
+      type: "journal",
+      url: "https://link.springer.com/article/10.1007/s00022-017-0391-1",
+      arxivUrl: "https://arxiv.org/abs/1612.05246"
     }
   ];
   
@@ -123,13 +135,39 @@ const Publications = () => {
                   )}
                   <p className="text-gray-600 text-sm">{publication.status}</p>
                 </div>
-                <a
-                  href="#"
-                  className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"
-                >
-                  <span className="mr-1">View paper</span>
-                  <ExternalLink size={16} />
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href={publication.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"
+                  >
+                    <span className="mr-1">View paper</span>
+                    <ExternalLink size={16} />
+                  </a>
+                  {publication.arxivUrl && (
+                    <a
+                      href={publication.arxivUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"
+                    >
+                      <span className="mr-1">arXiv</span>
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                  {publication.talkUrl && (
+                    <a
+                      href={publication.talkUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"
+                    >
+                      <span className="mr-1">Talk video</span>
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
