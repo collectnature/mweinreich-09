@@ -1,5 +1,5 @@
 
-import { Mail, Phone, ExternalLink } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -38,18 +38,6 @@ const Contact = () => {
                   <h3 className="text-lg font-medium text-academic-blue mb-1">Phone</h3>
                   <p className="text-gray-700">+1 347-752-0008</p>
                 </div>
-              </a>
-            </div>
-            
-            <div className="mt-12">
-              <a
-                href="https://www.maxweinreich.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"
-              >
-                <span className="mr-2">Visit my academic website</span>
-                <ExternalLink size={18} />
               </a>
             </div>
           </div>

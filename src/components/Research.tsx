@@ -38,20 +38,6 @@ const Research = () => {
             </div>
           </div>
         </div>
-        
-        <div className="mt-12 text-center animate-fade-up delay-300">
-          <p className="text-gray-700 mb-6">
-            Interested in learning more about my research or potential collaborations?
-          </p>
-          <a 
-            href="https://www.maxweinreich.com/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 py-3 bg-academic-blue text-white rounded-md hover:bg-opacity-90 transition-all duration-300"
-          >
-            Visit my academic website
-          </a>
-        </div>
       </div>
     </section>
   );
