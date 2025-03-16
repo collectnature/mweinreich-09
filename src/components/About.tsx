@@ -18,7 +18,7 @@ const About = () => {
             
             <div className="flex items-center mt-6">
               <a 
-                href="/lovable-uploads/CV.pdf" 
+                href="https://www.maxweinreich.com/CV.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"

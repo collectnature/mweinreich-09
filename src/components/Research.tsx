@@ -69,13 +69,36 @@ const Research = () => {
             <div className="animate-fade-up delay-100">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <img 
-                  src="/lovable-uploads/venn.jpg" 
+                  src="/lovable-uploads/6c50d5f3-6a4b-4b8c-b640-f55d8535f57b.png" 
                   alt="Venn diagram showing the intersection of Algebraic Geometry, Dynamical Systems, and Number Theory" 
-                  className="w-full h-auto rounded"
+                  className="w-full h-auto rounded mb-6"
                 />
-                <p className="text-gray-600 text-sm mt-3">
+                <p className="text-gray-600 text-sm">
                   My research lies at the intersection of Algebraic Geometry, Dynamical Systems, and Number Theory.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-16">
+          <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
+            <h3 className="text-2xl font-medium text-gray-800 mb-6">Billiards in Algebraic Curves</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  My recent work focuses on billiards in algebraic curves. Billiards in ellipses have been studied since the 18th century, but billiards in other algebraic curves reveal fascinating new behaviors, including chaotic dynamics and connections to integrable systems.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  The visualization shows the onset of chaos in billiards inside an elliptic curve (but not an ellipse). The colored trajectories represent different initial conditions, with chaos emerging in the system.
+                </p>
+              </div>
+              <div>
+                <img 
+                  src="/lovable-uploads/fe6ddf41-33b3-4e58-9d23-0b9b1a98fff4.png" 
+                  alt="Billiard trajectories showing the onset of chaos in an elliptic curve" 
+                  className="w-full h-auto rounded"
+                />
               </div>
             </div>
           </div>
@@ -85,7 +108,7 @@ const Research = () => {
           <h3 className="text-2xl font-medium text-gray-800 mb-6">Notes & Resources</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a 
-              href="/lovable-uploads/entropy_notes.pdf" 
+              href="https://www.maxweinreich.com/entropy_notes.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-white p-6 rounded-lg shadow-sm hover-lift flex items-start"
@@ -99,7 +122,7 @@ const Research = () => {
               </div>
             </a>
             <a 
-              href="/lovable-uploads/notes_bhps.pdf" 
+              href="https://www.maxweinreich.com/notes_bhps.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-white p-6 rounded-lg shadow-sm hover-lift flex items-start"
@@ -113,7 +136,7 @@ const Research = () => {
               </div>
             </a>
             <a 
-              href="/lovable-uploads/notes_berk_julia.pdf" 
+              href="https://www.maxweinreich.com/notes_berk_julia.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-white p-6 rounded-lg shadow-sm hover-lift flex items-start"
