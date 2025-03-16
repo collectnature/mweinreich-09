@@ -1,5 +1,5 @@
 
-import { GraduationCap, BookOpen, ChevronRight } from "lucide-react";
+import { GraduationCap, BookOpen, ChevronRight, FileText } from "lucide-react";
 
 const About = () => {
   return (
@@ -15,6 +15,18 @@ const About = () => {
             <p className="text-gray-700 leading-relaxed">
               My research applies methods from moduli space theory, mathematical physics, integrable systems, and arithmetic geometry to explore classical dynamical systems from an algebraic viewpoint. My recent work focuses on billiards and dynamical degrees.
             </p>
+            
+            <div className="flex items-center mt-6">
+              <a 
+                href="/lovable-uploads/CV.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-academic-blue hover:text-academic-light-blue transition-colors"
+              >
+                <FileText className="h-5 w-5 mr-2" />
+                <span className="underline">View my Curriculum Vitae (CV)</span>
+              </a>
+            </div>
           </div>
           
           <div className="space-y-8 animate-fade-up delay-150">
